@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.header-element {
+  background-color : #FFD700;
+  align-items : center;
+}
+
+.header-sesion-panel-buttons {
+  color : #191970;
+  background-color : #B22222;
+}
+
+.header-menu {
+  
+}
+
+.menu {
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-evenly;
+  align-items : center;
+}
+
+.menu-item {
+  flex-shrink : 0;
+}
+
+.menu-item-link {
+  display : flex;
+}
+
+ul, li {
+  list-style : none;
+}

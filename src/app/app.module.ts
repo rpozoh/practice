@@ -9,14 +9,18 @@ import { APP_ROUTES } from './app.routes';
 // Componentes
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 // Servicios
 import { CardsService } from './services/cards.service';
+import { HeaderComponent } from './components/shared/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

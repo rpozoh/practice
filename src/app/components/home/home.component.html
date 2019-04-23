@@ -23,9 +23,9 @@
       <option *ngFor="let cardType of cardTypes" [value]="cardType.cardTypeId">{{ cardType.cardTypeName }}</option>
     </select>
   </div>
-  <div class="" *ngIf="cardTypeSelected">
+  <div class="">
     <label for="">Sub Tipo: </label>
-    <select class="" name="selectCardSubType">
+    <select class="" name="selectCardSubType" [disabled]=!cardTypeSelected>
       <option *ngFor="let cardSubType of cardSubTypes" [value]="cardSubType.cardSubTypeId">{{ cardSubType.cardSubTypeName }}</option>
     </select>
   </div>

@@ -20,8 +20,11 @@ export class HomeComponent implements OnInit {
 
   getCardSubTypes(cardTypeId : number) {
     this.cardSubTypes = this._cardsService.getCardSubTypes(cardTypeId);
-    this.cardTypeSelected = true;
-    console.log( this.cardSubTypes );
+    if(this.cardSubTypes.length >= 1) {
+      this.cardTypeSelected = true;
+    } else {
+      this.cardTypeSelected = false;
+    }
   }
 
 }

@@ -8,6 +8,10 @@ export class CardsService {
 
   private cardTypes : CardTypes[] = [
     {
+      cardTypeId : 0,
+      cardTypeName : "Seleccione..."
+    },
+    {
       cardTypeId : 1,
       cardTypeName : "Pokémon"
     },
@@ -118,6 +122,9 @@ export class CardsService {
   getCardSubTypes(cardTypeId : number) {
     let cardSubTypes : CardSubTypes[] = [];
     for(let cardSubType of this.cardSubTypes) {
+      if(cardTypeId == 0) {
+        break;
+      }
       let cardType = cardSubType.cardTypeId;
       if(cardType == cardTypeId) {
         cardSubTypes.push(cardSubType);
